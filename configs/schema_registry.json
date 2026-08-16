@@ -1,0 +1,29 @@
+{
+  "registry_version": "2026-08-16",
+  "families": {
+    "DemoEquityQuote": {
+      "schema_version": 1,
+      "record_kind": "current_state",
+      "primary_key": ["symbol"],
+      "required": {
+        "symbol": "str",
+        "bid": "float",
+        "ask": "float",
+        "event_time": "str"
+      }
+    },
+    "DemoTradePrint": {
+      "schema_version": 1,
+      "record_kind": "event",
+      "primary_key": ["symbol", "trade_id"],
+      "required": {
+        "symbol": "str",
+        "trade_id": "str",
+        "price": "float",
+        "size": "int",
+        "event_time": "str"
+      }
+    }
+  }
+}
+
