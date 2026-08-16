@@ -1,0 +1,8 @@
+{
+  "manifest_version": "demo-v1",
+  "subscriptions": [
+    {"family": "DemoEquityQuote", "symbols": ["DEMO", "SYNTH"], "enabled": true},
+    {"family": "DemoTradePrint", "symbols": ["DEMO"], "enabled": true}
+  ]
+}
+
